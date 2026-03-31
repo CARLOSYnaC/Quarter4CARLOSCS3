@@ -86,19 +86,19 @@
 
 - Give .content a z-index: 1.
 
-- Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
+- Guided Question: It appears on top because of the code "top: 60px". The z-index number 
 
 - Challenge: 
-    * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
+    * Change the code "top" and "left" to "bottom" and "right, or simply add a high px number to top and left. "Please write the code on paper as well (both html and css on the part of .notice and .content)." For the paper part, I'll submit it f2f!
     * Try to change the position of .content to relative then to fixed. What do you observed each time?
     * What do you observe on about the effect of z-index on .notice and .content boxes?
 
 3. Please answer the following reflection questions (15 minutes)
 
-    a. Could you summarize the differences between the CSS position values (static, relative, absolute, fixed)? 
+    a. Static is the default position. It's at the very top left corner. Relative is a specific amount of px away from top, left, bottom, and/or right. Absolute is similar to relative, though it's space is NOT reserved. Other elements will take its spot if moved. Lastly, fixed is fixed in a certain spot in the viewport. 
 
-    b. How does absolute positioning depend on its parent element?
+    b. It is relative to it's parent element.
 
-    c. How do you differentiate sticky from fixed (you can research on sticky)?
+    c. Sticky isn't fixed to the viewport. Unlike fixed, which sticks in a certain spot, sticky only sticks until a given area (like top: 20px, left: 20px). Once it reaches that spot, it sticks there and only there. 
 
-    d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
+    d. I would definitely use fixed positioning! As an example, we have the header of KHUB in which you can find the buttons home, dashboard, courses, and a course search
