@@ -86,7 +86,7 @@
 
 - Give .content a z-index: 1.
 
-- Guided Question: It appears on top because of the code "top: 60px". The z-index number 
+- Guided Question: It appears on top because of the code "top: 60px". The z-index number dictates what order it'll be in on the screen. Think of it like layers in Canva! The higher the z-index number, the higher it will be above other objects/elements.
 
 - Challenge: 
     * Change the code "top" and "left" to "bottom" and "right, or simply add a high px number to top and left. "Please write the code on paper as well (both html and css on the part of .notice and .content)." For the paper part, I'll submit it f2f!
