@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Club Sign Ups</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Sign Ups For Clubs</h1>
+    <form>
+    
+    <label for="studentID">Student ID:<input type="numeric" id="studentID" name="studentID"></label> </br>
 
+    <label for="fullName">Full Name:<input type="text" id="fullName" name="userName"></label> </br>
+
+    <label for="birthDate">Birthday:<input type="date" id="birthDate" name="birthDate"></label> </br>
+
+    <label for="eMail">Email Address:<input type="email" id="eMail" name="eMail"></label> </br>
+
+    <label for="phoneNum">Mobile Number:<input type="text" id="phoneNum" name="phoneNum"></label> </br>
+
+    <p> Are you and intern or extern? </p> </br>
+      <input type="radio" id="intern" name="livingtype" value="Intern">
+        <label for="intern">Intern</label></br>
+    
+    <input type="radio" id="extern" name="livingtype" value="Extern">
+        <label for="extern">Extern</label></br>
+
+  <label for="club">What club do ya wanna join?:</label> </br>
+
+<select name="club" id="club">
+  <option value="care">CARE</option>
+  <option value="xyz">Pisay xyz</option>
+  <option value="acts">Acts</option>
+  <option value="expo">Exposure</option>
+  <option value="bake">Bake club</option>
+</select>
+
+<label for="wait">Why do you wanna join?: </label></br>
+<textarea id="tArea" name="wait" rows="4" cols="50"> </textarea>
+
+    <input type="submit" value="Submit"> </br>
+
+     <input type = "reset" value = "Reset"> </br>
+    
+</form>
+
+ <div class="club-list" id="clubList"></div>
+
+  <script src="script.js">
+    
+  </script>
+  
+</body>
+</html>
