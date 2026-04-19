@@ -7,7 +7,6 @@ function showMovies() {
   for (let key in movieRatings) {
     const movie = movieRatings[key];
 
-    // convert rating → stars
     let stars = "★".repeat(movie.rating) + "☆".repeat(5 - movie.rating);
 
     const div = document.createElement("div");
@@ -21,6 +20,10 @@ function showMovies() {
 
     list.appendChild(div);
   }
+
+  const avg = getAverageRating();
+  document.getElementById("averageRating").textContent =
+    "Average Rating: " + avg;
 }
 
 document.getElementById("moviesForm").addEventListener("submit", function(e) {
@@ -36,6 +39,20 @@ document.getElementById("moviesForm").addEventListener("submit", function(e) {
   movieRatings[key] = { name, year, rating };
 
   localStorage.setItem("movieRatings", JSON.stringify(movieRatings));
+
+function getAverageRating() {
+  let total = 0;
+  let count = 0;
+
+  for (let key in movieRatings) {
+    total += movieRatings[key].rating;
+    count++;
+  }
+
+  if (count === 0) return 0;
+
+  return (total / count).toFixed(1);
+}
 
   showMovies();
   this.reset();
